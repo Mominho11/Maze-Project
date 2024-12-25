@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #f4f4f4;
+  }
+  
+  #maze {
+    display: grid;
+    grid-template-columns: repeat(10, 40px);
+    grid-template-rows: repeat(10, 40px);
+    gap: 2px;
+  }
+  
+  .cell {
+    width: 40px;
+    height: 40px;
+    background: white;
+    border: 1px solid #ccc;
+  }
+  
+  .wall {
+    background: black;
+  }
+  
+  .start {
+    background: green;
+  }
+  
+  .end {
+    background: red;
+  }
+  
+  .player {
+    background: blue;
+  }
